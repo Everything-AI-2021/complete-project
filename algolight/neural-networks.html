@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="algo-style.css" type="text/css">
+  <title>Neural Networks</title>
+</head>
+<body>
+  <div id="particles-js" style="height: 630%;">
+  </div>
+  <script src="../JS/particles.js" charset="utf-8"></script>
+  <script src="../JS/app.js" charset="utf-8"></script>
+  <div class="algo-content">
+    <h1 class="algo-class">Neural Networks</h1>
+    <div class="algorithm1">
+      <h2 class="algo-name">Artificial Neural Networks</h2>
+      <p class="algo-explain">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <p class="algo-explain">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <div class="NN">
+        <img src="../images/ann.png" alt="Artificial Neural Networks Image">
+      </div>
+      <div class="algo-code">
+        <p class="algo-explain">
+          import tensorflow as tf <br>
+          ann = tf.keras.models.Sequential() <br>
+          ann.add(tf.keras.layers.Dense(units=6, activation='relu')) <br>
+          ann.add(tf.keras.layers.Dense(units=6, activation='relu')) <br>
+          ann.add(tf.keras.layers.Dense(units=1, activation= 'sigmoid')) <br>
+          ann.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy']) <br>
+          ann.fit(X_train, y_train, epochs=150) <br>
+          y_pred = ann.predict(X_test)
+         </p>
+      </div>
+    </div>
+    <div class="algorithm1">
+      <h2 class="algo-name">Convolution Neural Networks</h2>
+      <p class="algo-explain">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <p class="algo-explain">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <div class="NN">
+        <img src="../images/cnn.jpeg" alt="Artificial Neural Networks Image">
+      </div>
+      <div class="algo-code">
+        <p class="algo-explain">
+          import tensorflow as tf <br>
+          cnn = tf.keras.models.Sequential() <br>
+          cnn.add(tf.keras.layers.Conv2D(filters=32, kernel_size=3, activation='relu',input_shape= [64,64,3])) <br>
+          cnn.add(tf.keras.layers.MaxPool2D(pool_size = 2, strides = 2)) <br>
+          cnn.add(tf.keras.layers.Conv2D(filters=32, kernel_size=3, activation='relu')) <br>
+          cnn.add(tf.keras.layers.MaxPool2D(pool_size = 2, strides = 2)) <br>
+          cnn.add(tf.keras.layers.Flatten()) <br>
+          cnn.add(tf.keras.layers.Dense(units= 128, activation='relu')) <br>
+          cnn.add(tf.keras.layers.Dense(units= 1, activation= 'sigmoid')) <br>
+          cnn.compile(optimizer= 'adam', loss= 'binary_crossentropy', metrics= ['accuracy']) <br>
+          cnn.fit(training_set, validation_data= test_set, epochs= 30) <br>
+          result = cnn.predict(test_image)
+         </p>
+      </div>
+    </div>
+    <div class="algorithm1">
+      <h2 class="algo-name">Reccurent Neural Networks(LSTM)</h2>
+      <p class="algo-explain">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <p class="algo-explain">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <div class="NN">
+        <img src="../images/rnn.png" alt="Artificial Neural Networks Image">
+      </div>
+      <div class="algo-code">
+        <p class="algo-explain">
+          from keras.models import Sequential <br>
+          from keras.layers import Dense <br>
+          from keras.layers import LSTM <br>
+          from keras.layers import Dropout <br>
+          regressor = Sequential() <br>
+          regressor.add(LSTM(units = 50, return_sequences = True, input_shape = (X_train.shape[1], 1))) <br>
+          regressor.add(Dropout(0.2)) <br>
+          regressor.add(LSTM(units = 50, return_sequences = True)) <br>
+          regressor.add(Dropout(0.2)) <br>
+          regressor.add(LSTM(units = 50, return_sequences = True)) <br>
+          regressor.add(Dropout(0.2)) <br>
+          regressor.add(LSTM(units = 50)) <br>
+          regressor.add(Dropout(0.2)) <br>
+          regressor.add(Dense(units = 1)) <br>
+          regressor.compile(optimizer = 'adam', loss = 'mean_squared_error') <br>
+          regressor.fit(X_train, y_train, epochs = 100, batch_size = 32)
+         </p>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>© 2021 EverythingAI</p>
+  </div>
+</body>
+</html>

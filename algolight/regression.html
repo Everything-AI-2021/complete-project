@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="algo-style.css" type="text/css">
+  <title>Regression</title>
+</head>
+<body>
+  <div id="particles-js" style="height: 500%;">
+  </div>
+  <script src="../JS/particles.js" charset="utf-8"></script>
+  <script src="../JS/app.js" charset="utf-8"></script>
+  <div class="algo-content">
+    <h1 class="algo-class">Regression</h1>
+    <div class="algorithm1">
+      <h2 class="algo-name">Linear Regression</h2>
+      <p class="algo-explain">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <p class="algo-explain">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <div class="algo-code">
+        <p class="algo-explain">
+           from sklearn.linear_model import LinearRegression <br>
+           regressor = LinearRegression() <br>
+           regressor.fit(X_train, y_train)<br>
+           y_pred = regressor.predict(X_test)
+         </p>
+      </div>
+    </div>
+    <div class="algorithm1">
+      <h2 class="algo-name">Polynomial Regression</h2>
+      <p class="algo-explain">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <p class="algo-explain">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <div class="algo-code">
+        <p class="algo-explain">
+          from sklearn.preprocessing import PolynomialFeatures <br>
+          from sklearn.linear_model import LinearRegression <br>
+          poly_reg = PolynomialFeatures(degree = 4) <br>
+          X_poly = poly_reg.fit_transform(X_train) <br>
+          regressor = LinearRegression() <br>
+          regressor.fit(X_poly, y_train) <br>
+          y_pred = regressor.predict(poly_reg.transform(X_test)) <br>
+         </p>
+      </div>
+    </div>
+    <div class="algorithm1">
+      <h2 class="algo-name">Support Vector Machines (Regression)</h2>
+      <p class="algo-explain">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <p class="algo-explain">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <div class="algo-code">
+        <p class="algo-explain">
+          from sklearn.svm import SVR <br>
+          regressor = SVR(kernel = 'rbf') <br>
+          regressor.fit(X_train, y_train) <br>
+          y_pred = sc_y.inverse_transform(regressor.predict(sc_X.transform(X_test)))
+         </p>
+      </div>
+    </div>
+    <div class="algorithm1">
+      <h2 class="algo-name">Decision Tree Regression</h2>
+      <p class="algo-explain">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <p class="algo-explain">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <div class="algo-code">
+        <p class="algo-explain">
+          from sklearn.tree import DecisionTreeRegressor <br>
+          regressor = DecisionTreeRegressor(random_state = 0) <br>
+          regressor.fit(X_train, y_train) <br>
+          y_pred = regressor.predict(X_test)
+         </p>
+      </div>
+    </div>
+    <div class="algorithm1">
+      <h2 class="algo-name">Random Forest Regression</h2>
+      <p class="algo-explain">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <p class="algo-explain">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <div class="algo-code">
+        <p class="algo-explain">
+          from sklearn.ensemble import RandomForestRegressor <br>
+          regressor = RandomForestRegressor(n_estimators = 10, random_state = 0) <br>
+          regressor.fit(X_train, y_train) <br>
+          y_pred = regressor.predict(X_test)
+         </p>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>© 2021 EverythingAI</p>
+  </div>
+</body>
+</html>

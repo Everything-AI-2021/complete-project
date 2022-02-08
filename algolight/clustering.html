@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="algo-style.css" type="text/css">
+  <title>Clustering</title>
+</head>
+<body>
+  <div id="particles-js" style="height: 210%;">
+  </div>
+  <script src="../JS/particles.js" charset="utf-8"></script>
+  <script src="../JS/app.js" charset="utf-8"></script>
+  <div class="algo-content">
+    <h1 class="algo-class">Clustering</h1>
+    <div class="algorithm1">
+      <h2 class="algo-name">Hierarchical Clustering</h2>
+      <p class="algo-explain">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <p class="algo-explain">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <div class="algo-code">
+        <p class="algo-explain">
+          from sklearn.cluster import AgglomerativeClustering <br>
+          hc = AgglomerativeClustering(n_clusters = 5, affinity = 'euclidean', linkage = 'ward') <br>
+          y_hc = hc.fit_predict(X)
+         </p>
+      </div>
+    </div>
+    <div class="algorithm1">
+      <h2 class="algo-name">K-Means Clustering</h2>
+      <p class="algo-explain">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <p class="algo-explain">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <div class="algo-code">
+        <p class="algo-explain">
+          kmeans = KMeans(n_clusters=5, init='k-means++', random_state=0) <br>
+          y_kmeans = kmeans.fit_predict(X)
+         </p>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>© 2021 EverythingAI</p>
+  </div>
+</body>
+</html>

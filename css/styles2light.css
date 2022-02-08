@@ -1,0 +1,293 @@
+.body {
+  position:absolute;
+
+background-color: white;
+margin: 0;
+
+}
+#connect-second, #connect-third, #connect-forth{
+  text-decoration: none;
+}
+.front-page{
+}
+
+
+  /* The javascript used */
+
+#particles-js {
+
+position:absolute;
+width:100%;
+height:580%;
+background-color: white;
+padding-bottom: 10%;
+
+}
+
+/* nav bar contents */
+.NavBar-firstPage{
+  position: fixed;
+}
+.moon{
+  color:#6E00DD;
+}
+
+
+
+
+.Nav {
+  color:  black;
+  padding: 100px 25px;
+  font-size: 13px;
+  font-weight: bold;
+}
+ .Nav:hover {
+  color: #6E00DD;
+}
+.moon:hover{
+  color: black;
+}
+/* title part code */
+.name {
+
+  left:18%;
+top:8.75%;
+  display: inline-block;
+
+  position: absolute;
+  color: #6E00DD;
+  font-size: 70px;
+  font-weight: bold;
+
+}
+
+.vertcal {
+  display: inline-block;
+  border-left: 6px solid black;
+  height: 250px;
+  position: absolute;
+  left: 50%;
+  top: 7%;
+
+}
+
+.ano {
+  top: 9.5%;
+
+  padding-left: 52%;
+    padding-right: 25%;
+  color: black;
+  position:absolute;
+
+  display: inline-block;
+
+  font-weight: bolder;
+}
+
+
+/* updatecodes.. */
+/* update css codes..... */
+.second-page{
+  margin-top:55% ;
+  padding-top: 5%;
+  position:absolute;
+
+}
+.itscarousel {
+left:20%;
+
+  display: inline-block;
+}
+.headingaboutus {
+
+
+  padding-bottom: 5%;
+  color: #444444;
+  text-align: center;
+  font-size: 75px;
+}
+.aligntext {
+  text-align: center;
+  color: #444444;
+  padding: 5%;
+
+  text-decoration: underline;
+}
+.carosel-img{
+position:absolute;
+padding-left:5%;
+
+
+
+
+}
+#carouselExampleIndicators {
+
+  background-color: #DDDDDD;
+
+  margin-right:8%;
+  margin-left:8%;
+
+  border-radius: 8%;
+}
+.textAlign {
+  padding-left: 65%;
+  padding-right:10%;
+  padding-bottom: 10%;
+  /* bottom: 50%; */
+  position: relative;
+color: #444444;
+}
+/* third page css.. */
+.third-page{
+  margin-top: 130%;
+  /* padding: 20% 20%; */
+  margin-right: 20%;
+  margin-left: 20%;
+  position:absolute;
+ z-index: 2;
+
+}
+.carding{
+  padding-bottom: 3%;
+}
+
+.ml-code-header{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 85px;
+ color: #444444;
+ text-align:center;
+ padding-bottom:5%;
+
+
+
+}
+
+.img.code-images{
+  width: 300px;
+  height: 300px;
+  border-radius: 20%;
+  padding-bottom: 2%;
+  display:inline-block;
+
+
+}
+/* fourth page.. */
+.aboutUs-rowing {
+
+  padding: 5%;
+}
+
+.column-aboutus {
+
+  padding: 0% 2% 0% 5%;
+
+  display: inline-block;
+}
+
+.aboutUS-footer {
+
+  background-color: #222222;
+  width: 100%;
+  height: 10rem;
+}
+
+.aboutUS-footer p {
+  color:#DDDDDD ;
+  padding: 4%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.imageBorder {
+  background-color: #DDDDDD;
+  width: 210px;
+  height: 210px;
+  border-radius: 200%;
+  margin-left: 10%;
+  align-items: center;
+}
+
+.cardImages {
+  width: 200px;
+  height: 200px;
+  border-radius: 200%;
+  margin-left: 3%;
+
+padding-top: 5%;
+}
+
+.fourthPage {
+margin-top: 180%;
+position:absolute;
+z-index: 2;
+}
+
+.aboutUS-heading {
+  text-align: center;
+  margin-top: 2%;
+  padding-bottom: 5%;
+  font-size: 75px;
+  border-bottom: 5px;
+  color:#444444;
+}
+
+.cardheader {
+  text-align: center;
+  color:#444444;
+}
+
+.details {
+
+
+  color:#444444;
+
+}
+
+.headliner {
+  width: 70%;
+  height: 30px;
+  border: 5px solid #EEEEEE;
+border-radius: 30%;
+}
+/* mobile veiw properties */
+
+@media (max-width: 800px){
+
+
+
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    visibility: collapse;
+
+  }
+
+
+  }
+
+
+
+
+  /* second page,,,, */
+  .details{
+  visibility: hidden;
+
+  }
+  /* ....... */
+
+
+
+
+
+
+
+  /* third page.. */
+  .code-images{
+    width: 200px;
+    height: 200px;
+    border-radius: 5%;
+  }
+}
+/* ...... */
